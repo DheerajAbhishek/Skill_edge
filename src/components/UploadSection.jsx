@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Upload } from 'lucide-react';
+import { Upload, Target, Lightbulb, BarChart3, Rocket } from 'lucide-react';
 import { parsePDF, extractBasicInfo } from '../utils/pdfParser';
 import { detectSkills, predictField, getRecommendedSkills } from '../utils/skillDetector';
 import { calculateResumeScore, detectExperienceLevel } from '../utils/resumeScorer';
@@ -118,22 +118,22 @@ const UploadSection = ({ onAnalysisComplete, isAnalyzing, setIsAnalyzing }) => {
 
       <div className="features-grid fade-in">
         <div className="feature-item">
-          <div className="feature-icon">🎯</div>
+          <div className="feature-icon"><Target size={32} color="#0A84FF" /></div>
           <h4>Smart Analysis</h4>
           <p>AI-powered skill detection and scoring</p>
         </div>
         <div className="feature-item">
-          <div className="feature-icon">💡</div>
+          <div className="feature-icon"><Lightbulb size={32} color="#FF9F0A" /></div>
           <h4>Personalized Tips</h4>
           <p>Get tailored recommendations</p>
         </div>
         <div className="feature-item">
-          <div className="feature-icon">📊</div>
+          <div className="feature-icon"><BarChart3 size={32} color="#30D158" /></div>
           <h4>Detailed Insights</h4>
           <p>Comprehensive resume breakdown</p>
         </div>
         <div className="feature-item">
-          <div className="feature-icon">🚀</div>
+          <div className="feature-icon"><Rocket size={32} color="#BF5AF2" /></div>
           <h4>Career Guidance</h4>
           <p>Job matches and interview prep</p>
         </div>

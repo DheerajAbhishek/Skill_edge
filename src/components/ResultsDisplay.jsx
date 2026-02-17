@@ -8,6 +8,7 @@ import VisualizationCharts from './VisualizationCharts';
 import VideoRecommendations from './VideoRecommendations';
 import TrendingSkills from './TrendingSkills';
 import JobOpportunities from './JobOpportunities';
+import SideNav from './SideNav';
 import { generateAIQuestions } from '../utils/groqAPI';
 import { getCoursesByField, resumeVideos, interviewVideos } from '../utils/coursesData';
 import { getTrendingSkills, getJobRecommendations, getJobSearchUrls } from '../utils/jobsAndTrends';
@@ -50,6 +51,8 @@ const ResultsDisplay = ({ results, onReset }) => {
 
   return (
     <div className="results-container container fade-in">
+      <SideNav />
+      
       {/* Header Actions */}
       <div className="results-header">
         <h1>Resume Analysis Results</h1>
@@ -60,7 +63,7 @@ const ResultsDisplay = ({ results, onReset }) => {
       </div>
 
       {/* Basic Info Card */}
-      <div className="info-card card">
+      <div id="basic-info" className="info-card card">
         <div className="info-gradient-bg"></div>
         <h3>Hello, {basicInfo.name || 'Candidate'}!</h3>
         <p>Here's what we found in your resume</p>
@@ -130,7 +133,7 @@ const ResultsDisplay = ({ results, onReset }) => {
       </div>
 
       {/* Experience Analysis */}
-      <div className="section">
+      <div id="experience" className="section">
         <div className="section-heading-wrapper">
           <div className="section-heading">
             <h2>Experience Level Analysis</h2>
@@ -183,28 +186,34 @@ const ResultsDisplay = ({ results, onReset }) => {
       </div>
 
       {/* Skills Analysis */}
-      <SkillsAnalysis 
-        detectedSkills={detectedSkills}
-        recommendedSkills={recommendedSkills}
-        matchingSkills={matchingSkills}
-        missingSkills={missingSkills}
-      />
+      <div id="skills">
+        <SkillsAnalysis 
+          detectedSkills={detectedSkills}
+          recommendedSkills={recommendedSkills}
+          matchingSkills={matchingSkills}
+          missingSkills={missingSkills}
+        />
+      </div>
 
       {/* Trending Skills 2026 */}
-      <TrendingSkills 
-        field={field}
-        skills={getTrendingSkills(field)}
-        detectedSkills={detectedSkills}
-      />
+      <div id="trending">
+        <TrendingSkills 
+          field={field}
+          skills={getTrendingSkills(field)}
+          detectedSkills={detectedSkills}
+        />
+      </div>
 
       {/* Course Recommendations */}
-      <CoursesRecommendation 
-        field={field}
-        courses={getCoursesByField(field)}
-      />
+      <div id="courses">
+        <CoursesRecommendation 
+          field={field}
+          courses={getCoursesByField(field)}
+        />
+      </div>
 
       {/* Resume Score Breakdown */}
-      <div className="section">
+      <div id="score" className="section">
         <div className="section-heading-wrapper">
           <div className="section-heading">
             <h2>Resume Score Breakdown</h2>
@@ -240,24 +249,30 @@ const ResultsDisplay = ({ results, onReset }) => {
       />
 
       {/* Job Opportunities */}
-      <JobOpportunities 
-        jobs={getJobRecommendations(field, experience.level, detectedSkills)}
-        getJobUrls={getJobSearchUrls}
-      />
+      <div id="jobs">
+        <JobOpportunities 
+          jobs={getJobRecommendations(field, experience.level, detectedSkills)}
+          getJobUrls={getJobSearchUrls}
+        />
+      </div>
 
       {/* Interview Questions */}
-      <InterviewQuestions 
-        aiQuestions={aiQuestions}
-        loadingQuestions={loadingQuestions}
-        field={field}
-        skills={detectedSkills}
-      />
+      <div id="interview">
+        <InterviewQuestions 
+          aiQuestions={aiQuestions}
+          loadingQuestions={loadingQuestions}
+          field={field}
+          skills={detectedSkills}
+        />
+      </div>
 
       {/* Video Recommendations */}
-      <VideoRecommendations 
-        resumeVideos={resumeVideos}
-        interviewVideos={interviewVideos}
-      />
+      <div id="videos">
+        <VideoRecommendations 
+          resumeVideos={resumeVideos}
+          interviewVideos={interviewVideos}
+        />
+      </div>
 
       {/* Action Buttons */}
       <div className="action-buttons">

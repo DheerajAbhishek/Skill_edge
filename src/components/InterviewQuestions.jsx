@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Sparkles, BookOpen, Target } from 'lucide-react';
+import { ChevronDown, ChevronUp, Sparkles, BookOpen, Target, Wrench } from 'lucide-react';
 import { generateResumeBasedQuestions } from '../utils/skillQuestionsDB';
 import { getFieldStandardQuestions } from '../utils/fieldQuestionsDB';
 import './InterviewQuestions.css';
@@ -40,7 +40,7 @@ const InterviewQuestions = ({ aiQuestions, loadingQuestions, field, skills }) =>
           <div className="group-header ai-header">
             <Sparkles size={20} />
             <div className="header-content">
-              <h3>🎯 PERSONALIZED QUESTIONS (AI-POWERED)</h3>
+              <h3><Target size={18} style={{ display: 'inline-block', marginRight: '8px' }} /> PERSONALIZED QUESTIONS (AI-POWERED)</h3>
               <p className="header-subtitle">Questions based on YOUR resume - projects, certifications & skills</p>
             </div>
           </div>
@@ -52,7 +52,7 @@ const InterviewQuestions = ({ aiQuestions, loadingQuestions, field, skills }) =>
                   className="question-header"
                   onClick={() => toggleAI(idx)}
                 >
-                  <span className="question-number ai-number">🎯 Q{idx + 1}</span>
+                  <span className="question-number ai-number"><Target size={16} style={{ display: 'inline-block', marginRight: '4px' }} /> Q{idx + 1}</span>
                   <h4>{q.question}</h4>
                   {expandedAI[idx] ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                 </div>
@@ -91,7 +91,7 @@ const InterviewQuestions = ({ aiQuestions, loadingQuestions, field, skills }) =>
         <div className="group-header standard-header">
           <BookOpen size={20} />
           <div className="header-content">
-            <h3>📚 STANDARD INTERVIEW QUESTIONS</h3>
+            <h3><BookOpen size={18} style={{ display: 'inline-block', marginRight: '8px' }} /> STANDARD INTERVIEW QUESTIONS</h3>
             <p className="header-subtitle">Common questions for {field} roles</p>
           </div>
         </div>
@@ -127,7 +127,7 @@ const InterviewQuestions = ({ aiQuestions, loadingQuestions, field, skills }) =>
           <div className="group-header skill-header">
             <Target size={20} />
             <div className="header-content">
-              <h3>🛠️ SKILL-SPECIFIC QUESTIONS</h3>
+              <h3><Wrench size={18} style={{ display: 'inline-block', marginRight: '8px' }} /> SKILL-SPECIFIC QUESTIONS</h3>
               <p className="header-subtitle">Based on the skills detected in your resume</p>
             </div>
           </div>
