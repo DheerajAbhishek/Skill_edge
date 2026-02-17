@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
+import SideNav from './components/SideNav';
 import UploadSection from './components/UploadSection';
 import ResultsDisplay from './components/ResultsDisplay';
 import About from './components/About';
@@ -57,17 +58,25 @@ function App() {
 
   return (
     <div className="app">
-      <Header activeTab={activeTab} onNavigate={handleNavigate} />
+      <SideNav 
+        activeTab={activeTab} 
+        onNavigate={handleNavigate}
+        hasResults={analysisResults !== null && activeTab === 'upload'}
+      />
       
-      <main className="main-content">
-        {renderContent()}
-      </main>
-      
-      <footer className="footer">
-        <div className="container">
-          <p>© 2026 skilledge. AI-powered resume analysis.</p>
-        </div>
-      </footer>
+      <div className="app-content">
+        <Header />
+        
+        <main className="main-content">
+          {renderContent()}
+        </main>
+        
+        <footer className="footer">
+          <div className="container">
+            <p>© 2026 skilledge. AI-powered resume analysis.</p>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }

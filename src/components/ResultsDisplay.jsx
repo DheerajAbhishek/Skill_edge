@@ -8,7 +8,6 @@ import VisualizationCharts from './VisualizationCharts';
 import VideoRecommendations from './VideoRecommendations';
 import TrendingSkills from './TrendingSkills';
 import JobOpportunities from './JobOpportunities';
-import SideNav from './SideNav';
 import { generateAIQuestions } from '../utils/groqAPI';
 import { getCoursesByField, resumeVideos, interviewVideos } from '../utils/coursesData';
 import { getTrendingSkills, getJobRecommendations, getJobSearchUrls } from '../utils/jobsAndTrends';
@@ -51,8 +50,6 @@ const ResultsDisplay = ({ results, onReset }) => {
 
   return (
     <div className="results-container container fade-in">
-      <SideNav />
-      
       {/* Header Actions */}
       <div className="results-header">
         <h1>Resume Analysis Results</h1>
