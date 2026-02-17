@@ -1,0 +1,179 @@
+.courses-header {
+  margin-bottom: 32px;
+}
+
+.courses-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.courses-title h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.courses-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.courses-slider {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.courses-slider label {
+  display: block;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.slider-container span {
+  color: var(--text-secondary);
+  font-weight: 600;
+  min-width: 20px;
+}
+
+.course-slider {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--bg-level-2);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.course-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--system-blue);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(10, 132, 255, 0.4);
+}
+
+.course-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--system-blue);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(10, 132, 255, 0.4);
+}
+
+.course-slider::-webkit-slider-thumb:hover {
+  background: #0071e3;
+  transform: scale(1.1);
+}
+
+.slider-value {
+  text-align: center;
+  color: var(--system-blue);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-card {
+  text-decoration: none;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 0 20px rgba(10, 132, 255, 0.15);
+}
+
+.course-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+}
+
+.course-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 132, 255, 0.2);
+  color: var(--system-blue);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  flex-shrink: 0;
+}
+
+.course-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.course-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.free-badge {
+  background: var(--system-green);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.course-icon {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.course-card:hover .course-icon {
+  color: var(--system-blue);
+}
+
+@media (max-width: 768px) {
+  .course-content {
+    padding: 14px 16px;
+  }
+  
+  .course-number {
+    width: 32px;
+    height: 32px;
+    font-size: 0.875rem;
+  }
+  
+  .course-info h4 {
+    font-size: 0.9375rem;
+  }
+}

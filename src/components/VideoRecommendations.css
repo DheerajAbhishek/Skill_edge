@@ -1,0 +1,38 @@
+.video-recommendations {
+  margin-top: 48px;
+}
+
+.video-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.video-header h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.video-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin: 0 0 24px 0;
+}
+
+.video-container {
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-container iframe {
+  display: block;
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .video-container iframe {
+    height: 250px;
+  }
+}
