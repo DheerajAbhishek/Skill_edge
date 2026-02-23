@@ -1,112 +1,112 @@
 .about-page {
-  padding: 60px 0;
-  min-height: 100vh;
+    padding: 60px 0;
+    min-height: 100vh;
 }
 
 .about-content {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 .about-intro {
-  margin-bottom: 40px;
-  padding: 32px;
-  text-align: center;
+    margin-bottom: 40px;
+    padding: 32px;
+    text-align: center;
 }
 
 .intro-text {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--text-primary);
-  margin: 0;
-  max-width: 900px;
-  margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin: 0;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
 }
 
 .feature-card {
-  padding: 32px;
-  text-align: center;
-  transition: transform 0.3s ease;
+    padding: 32px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .feature-icon {
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
 }
 
 .feature-card h3 {
-  color: var(--text-primary);
-  font-size: 20px;
-  margin-bottom: 12px;
+    color: var(--text-primary);
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .feature-card p {
-  color: var(--text-secondary);
-  line-height: 1.6;
-  font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 15px;
 }
 
 .about-mission,
 .about-tech {
-  padding: 32px;
-  margin-bottom: 24px;
+    padding: 32px;
+    margin-bottom: 24px;
 }
 
 .about-mission h3,
 .about-tech h3 {
-  color: var(--text-primary);
-  font-size: 24px;
-  margin-bottom: 16px;
+    color: var(--text-primary);
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
 .about-mission p {
-  color: var(--text-secondary);
-  line-height: 1.8;
-  font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 16px;
 }
 
 .tech-list {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .tech-list li {
-  color: var(--text-secondary);
-  padding: 12px 0;
-  border-bottom: 1px solid var(--separator);
-  font-size: 15px;
+    color: var(--text-secondary);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--separator);
+    font-size: 15px;
 }
 
 .tech-list li:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .tech-list strong {
-  color: var(--text-primary);
-  margin-right: 8px;
+    color: var(--text-primary);
+    margin-right: 8px;
 }
 
 @media (max-width: 768px) {
-  .about-page {
-    padding: 40px 0;
-  }
+    .about-page {
+        padding: 40px 0;
+    }
 
-  .intro-text {
-    font-size: 16px;
-  }
+    .intro-text {
+        font-size: 16px;
+    }
 
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
 }

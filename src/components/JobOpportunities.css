@@ -1,108 +1,108 @@
 .jobs-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 32px;
 }
 
 .jobs-header h2 {
-  margin: 0 0 8px 0;
-  font-size: 2rem;
+    margin: 0 0 8px 0;
+    font-size: 2rem;
 }
 
 .jobs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
 }
 
 .job-card {
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .job-card h3 {
-  margin: 0;
-  font-size: 1.375rem;
-  color: var(--text-primary);
+    margin: 0;
+    font-size: 1.375rem;
+    color: var(--text-primary);
 }
 
 .job-badges {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .job-level {
-  background: rgba(0, 113, 227, 0.15);
-  color: var(--system-blue);
-  padding: 6px 14px;
-  border-radius: 980px;
-  font-size: 0.8125rem;
-  font-weight: 600;
+    background: rgba(0, 113, 227, 0.15);
+    color: var(--system-blue);
+    padding: 6px 14px;
+    border-radius: 980px;
+    font-size: 0.8125rem;
+    font-weight: 600;
 }
 
 .job-salary {
-  background: rgba(52, 199, 89, 0.15);
-  color: var(--system-green);
-  padding: 6px 14px;
-  border-radius: 980px;
-  font-size: 0.8125rem;
-  font-weight: 600;
+    background: rgba(52, 199, 89, 0.15);
+    color: var(--system-green);
+    padding: 6px 14px;
+    border-radius: 980px;
+    font-size: 0.8125rem;
+    font-weight: 600;
 }
 
 .job-description {
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin: 0;
-  font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.9375rem;
 }
 
 .job-skills {
-  color: var(--text-body);
-  font-size: 0.875rem;
-  padding: 12px 0;
-  border-top: 1px solid var(--separator);
+    color: var(--text-body);
+    font-size: 0.875rem;
+    padding: 12px 0;
+    border-top: 1px solid var(--separator);
 }
 
 .job-skills strong {
-  color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .job-platforms {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding-top: 8px;
-  border-top: 1px solid var(--separator);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--separator);
 }
 
 .platform-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  background: var(--bg-level-2);
-  color: var(--text-primary);
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  border: 1px solid var(--separator);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--bg-level-2);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid var(--separator);
 }
 
 .platform-btn:hover {
-  background: var(--system-blue);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(10, 132, 255, 0.3);
+    background: var(--system-blue);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(10, 132, 255, 0.3);
 }
 
 @media (max-width: 768px) {
-  .jobs-grid {
-    grid-template-columns: 1fr;
-  }
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
 }

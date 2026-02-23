@@ -1,236 +1,236 @@
 .interview-section {
-  margin-top: 48px;
+    margin-top: 48px;
 }
 
 .section-subtitle {
-  color: var(--text-secondary);
-  font-size: 1.125rem;
-  margin-bottom: 32px;
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    margin-bottom: 32px;
 }
 
 .questions-group {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .group-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 24px;
-  padding: 20px 24px;
-  background: var(--bg-level-1);
-  border-radius: 12px;
-  border-left: 4px solid;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 20px 24px;
+    background: var(--bg-level-1);
+    border-radius: 12px;
+    border-left: 4px solid;
 }
 
 .group-header h3 {
-  margin: 0 0 6px 0;
-  font-size: 1.25rem;
-  font-weight: 700;
+    margin: 0 0 6px 0;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .header-content {
-  flex: 1;
+    flex: 1;
 }
 
 .header-subtitle {
-  color: var(--text-secondary);
-  font-size: 0.875rem;
-  margin: 0;
-  font-weight: 400;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin: 0;
+    font-weight: 400;
 }
 
 .group-header.ai-header {
-  border-left-color: var(--system-purple);
-  background: linear-gradient(135deg, rgba(191, 90, 242, 0.1), rgba(94, 92, 230, 0.05));
+    border-left-color: var(--system-purple);
+    background: linear-gradient(135deg, rgba(191, 90, 242, 0.1), rgba(94, 92, 230, 0.05));
 }
 
 .group-header.standard-header {
-  border-left-color: var(--system-blue);
-  background: linear-gradient(135deg, rgba(10, 132, 255, 0.1), rgba(100, 210, 255, 0.05));
+    border-left-color: var(--system-blue);
+    background: linear-gradient(135deg, rgba(10, 132, 255, 0.1), rgba(100, 210, 255, 0.05));
 }
 
 .group-header.skill-header {
-  border-left-color: var(--system-orange);
-  background: linear-gradient(135deg, rgba(255, 159, 10, 0.1), rgba(255, 214, 10, 0.05));
+    border-left-color: var(--system-orange);
+    background: linear-gradient(135deg, rgba(255, 159, 10, 0.1), rgba(255, 214, 10, 0.05));
 }
 
 .badge {
-  padding: 6px 14px;
-  border-radius: 16px;
-  font-size: 0.8125rem;
-  font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.8125rem;
+    font-weight: 600;
 }
 
 .ai-badge {
-  background: var(--system-purple);
-  color: white;
+    background: var(--system-purple);
+    color: white;
 }
 
 .standard-badge {
-  background: var(--system-blue);
-  color: white;
+    background: var(--system-blue);
+    color: white;
 }
 
 .questions-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .question-card {
-  padding: 0;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .question-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .question-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 20px 24px;
-  cursor: pointer;
-  transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
 
 .question-header:hover {
-  background: var(--bg-level-2);
+    background: var(--bg-level-2);
 }
 
 .question-number {
-  min-width: 50px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-level-2);
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 0.8125rem;
-  flex-shrink: 0;
+    min-width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-level-2);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    flex-shrink: 0;
 }
 
 .question-number.ai-number {
-  background: rgba(191, 90, 242, 0.15);
-  color: var(--system-purple);
+    background: rgba(191, 90, 242, 0.15);
+    color: var(--system-purple);
 }
 
 .question-number.standard-number {
-  background: rgba(10, 132, 255, 0.15);
-  color: var(--system-blue);
+    background: rgba(10, 132, 255, 0.15);
+    color: var(--system-blue);
 }
 
 .question-header h4 {
-  flex: 1;
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-primary);
+    flex: 1;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
 }
 
 /* Skill-Specific Questions Styling */
 .skill-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 12px;
 }
 
 .skill-card {
-  padding: 0;
+    padding: 0;
 }
 
 .skill-card .question-header {
-  padding: 14px 18px;
-  gap: 12px;
+    padding: 14px 18px;
+    gap: 12px;
 }
 
 .skill-question-title {
-  flex: 1;
-  margin: 0;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  line-height: 1.4;
+    flex: 1;
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.4;
 }
 
 .skill-card .question-details {
-  padding: 0 18px 14px 18px;
+    padding: 0 18px 14px 18px;
 }
 
 .question-header svg {
-  color: var(--text-secondary);
-  flex-shrink: 0;
+    color: var(--text-secondary);
+    flex-shrink: 0;
 }
 
 .question-details {
-  padding: 0 24px 24px 24px;
-  border-top: 1px solid var(--separator);
+    padding: 0 24px 24px 24px;
+    border-top: 1px solid var(--separator);
 }
 
 .detail-section {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 
 .detail-section strong {
-  display: block;
-  color: var(--text-primary);
-  font-weight: 600;
-  margin-bottom: 8px;
+    display: block;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .detail-section p {
-  color: var(--text-body);
-  line-height: 1.6;
-  margin: 0;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin: 0;
 }
 
 .answer-points {
-  background: rgba(48, 209, 88, 0.05);
-  padding: 16px;
-  border-radius: 8px;
-  border-left: 3px solid var(--system-green);
+    background: rgba(48, 209, 88, 0.05);
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 3px solid var(--system-green);
 }
 
 .answer-section {
-  background: rgba(10, 132, 255, 0.05);
-  padding: 16px;
-  border-radius: 8px;
-  border-left: 3px solid var(--system-blue);
+    background: rgba(10, 132, 255, 0.05);
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 3px solid var(--system-blue);
 }
 
 .loading-questions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 40px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
 }
 
 .loading-questions p {
-  color: var(--text-secondary);
-  margin: 0;
+    color: var(--text-secondary);
+    margin: 0;
 }
 
 @media (max-width: 768px) {
-  .group-header {
-    flex-wrap: wrap;
-  }
-  
-  .question-header {
-    padding: 16px;
-  }
-  
-  .question-header h4 {
-    font-size: 0.9375rem;
-  }
-  
-  .skill-list {
-    grid-template-columns: 1fr;
-  }
+    .group-header {
+        flex-wrap: wrap;
+    }
+
+    .question-header {
+        padding: 16px;
+    }
+
+    .question-header h4 {
+        font-size: 0.9375rem;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
+    }
 }

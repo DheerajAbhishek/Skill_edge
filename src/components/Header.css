@@ -1,45 +1,45 @@
 .header {
-  background: #000000;
-  padding: 40px 20px 30px;
+    background: #000000;
+    padding: 40px 20px 30px;
 }
 
 .header-content {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .brand-logo {
-  font-size: 72px;
-  font-weight: 900;
-  margin: 0;
-  letter-spacing: 0.02em;
-  background: linear-gradient(135deg, #9b6bff 0%, #c99bff 50%, #9b6bff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.02em;
+    background: linear-gradient(135deg, #9b6bff 0%, #c99bff 50%, #9b6bff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
 
 .brand-tagline {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
-  margin: 0 0 20px 0;
-  text-align: center;
-  max-width: 800px;
-  line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-  .brand-logo {
-    font-size: 48px;
-  }
-  
-  .brand-tagline {
-    font-size: 14px;
-    padding: 0 20px;
-  }
+    .brand-logo {
+        font-size: 48px;
+    }
+
+    .brand-tagline {
+        font-size: 14px;
+        padding: 0 20px;
+    }
 }
